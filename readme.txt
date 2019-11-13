@@ -36,3 +36,13 @@ update
 切换gitClone库并查看文件
 $ cd gitskills
 $ ls
+————————————————————————————————————————————————————————————————————————————
+分支
+创建dev分支，然后切换到dev分支：
+$ git checkout -b dev
+
+git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
+$ git branch dev
+$ git checkout dev
+查看当前分支
+git branch
