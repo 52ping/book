@@ -75,3 +75,55 @@ ____________________________________
 删除分支：git branch -d <name>
 ____________________________________
 同时对一个地方更改发生冲突
+查看分支历史
+git log --graph --pretty=oneline --abbrev-commit
+
+合并分支时，加上--no-ff参数就可以用普通模式合并，
+合并后的历史有分支，能看出来曾经做过合并，
+而fast forward合并就看不出来曾经做过合并
+————————————————————————————————————————————————
+bug分区
+先将正在工作的dev 分区储存
+git stash
+创建bug分支issue-101
+git switch -c issue-101
+
+用git stash list命令查看刚才的工作现场
+git stash list
+
+用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+
+另一种方式是用git stash pop，恢复的同时把stash内容也删了
+
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
+——————————————————————————————————————————————————————————
+多人协作
+多人协作的工作模式通常是这样：
+
+首先，可以试图用git push origin <branch-name>推送自己的修改；
+
+如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+
+如果合并有冲突，则解决冲突，并在本地提交；
+
+没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！
+
+如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to <branch-name> origin/<branch-name>。
+
+这就是多人协作的工作模式，一旦熟悉了，就非常简单。
+
+小结
+查看远程库信息，使用git remote -v；
+
+本地新建的分支如果不推送到远程，对其他人就是不可见的；
+
+从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+
+在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+
+建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+
+从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+rebase操作的特点：把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了。
+git rebase
