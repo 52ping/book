@@ -44,5 +44,33 @@ $ git checkout -b dev
 git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
 $ git branch dev
 $ git checkout dev
+
 查看当前分支
 git branch
+
+合并分区dev
+git merge dev
+
+删除dev分支
+$ git branch -d dev
+
+最新版本的Git提供了新的git switch命令来切换分支：
+创建并切换到新的dev分支，可以使用：
+$ git switch -c dev
+
+直接切换到已有的master分支，可以使用：
+$ git switch master
+____________________________________
+小结
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>或者git switch <name>
+
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+____________________________________
