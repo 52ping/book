@@ -1,4 +1,7 @@
-var Calendar = new Class({
+// Calendar: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/calendar>
+// Calendar RC4, Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron>, MIT Style License.
+
+var Calendar = new Class({	
 
 	options: {
 		blocked: [], // blocked dates 
@@ -16,6 +19,10 @@ var Calendar = new Class({
 		pad: 1, // padding between multiple calendars
 		tweak: {x: 0, y: 0} // tweak calendar positioning
 	},
+
+	// initialize: calendar constructor
+	// @param obj (obj) a js object containing the form elements and format strings { id: 'format', id: 'format' etc }
+	// @param props (obj) optional properties
 
 	initialize: function(obj, options) {
 		// basic error checking
@@ -176,7 +183,7 @@ var Calendar = new Class({
 
 	// bounds: returns the start / end bounds of the calendar
 	// @param cal (obj)
-	// @returns obj
+	// @returns obj	
 
 	bounds: function(cal) {
 		// 1. first we assume the calendar has no bounds (or a thousand years in either direction)

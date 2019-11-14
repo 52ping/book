@@ -1,3 +1,6 @@
+/* Calendar: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/calendar> */
+/* Experimental CSS for Calendar (navigation: 1), Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron> */
+
 input.i-heart-ny,
 select.i-heart-ny {
 	width: 149px;
@@ -48,7 +51,14 @@ div.i-heart-ny {
 	div.i-heart-ny.october div { background-image: url(i-heart-ny-oct.jpg); }	
 	div.i-heart-ny.november div { background-image: url(i-heart-ny-nov.jpg); }	
 	div.i-heart-ny.december div { background-image: url(i-heart-ny-dec.jpg); }	
-
+	
+	/* 
+	We won't be using the caption element traditionally
+	We have to make sure it doesn't take up space in the browser and offset the other elements
+	Unfortunately position: absolute is not supported by all browsers for table-caption
+	IEX only responds to line-height
+	*/
+	
 	div.i-heart-ny caption {
 		color: #808080;
 		height: 0%;
@@ -83,6 +93,12 @@ div.i-heart-ny {
 		right: 10px;
 		z-index: 100;
 	}
+	
+	/* 
+	IEX won't work if all the children of the caption element are absolutely positioned
+	Since we can't just leave the year un-positioned, we will have to hide it
+	(Remarkably this actually works in IEX)
+	*/
 	
 	div.i-heart-ny caption span.year {
 		display: none;

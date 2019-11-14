@@ -12,7 +12,7 @@ if(user==null){
 <html>
 <head>
 
-<title>B&N公司图书管理系统</title>
+<title>图书管理系统</title>
 <link href="css/edu.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/all.css">
 </head>

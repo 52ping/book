@@ -10,7 +10,7 @@ List<User> listuser=(List)session.getAttribute("listuser");
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>**图书管理系统</title>
+<title>图书管理系统</title>
 <style type="text/css">
 body {
 	margin-left: 0px;
@@ -58,6 +58,7 @@ a:active {
 <jsp:include page="left.jsp"/>
 
 <div class="demo">
+	
 	<br><br>
 	<table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
 	  <tr>
@@ -67,9 +68,9 @@ a:active {
 	        <td width="1101" background="images/tab_05.gif"><img src="images/311.gif" width="16" height="16" /> <span class="STYLE4">查看所有用户</span></td>
 	        <td width="281" background="images/tab_05.gif"><table border="0" align="right" cellpadding="0" cellspacing="0">
 	          <tr>
-				  <td class="STYLE1"><div align="center"></div></td>
-				  <td class="STYLE1"><div align="center"><a href="urseadd.jsp">添加</a></div></td>
-			  </tr>
+	                    <td class="STYLE1"><div align="center"></div></td>
+	                    <td class="STYLE1"><div align="center"><a href="urseadd.jsp">添加</a></div></td>
+	                  </tr>
 	        </table></td>
 	        <td width="14"><img src="images/tab_07.gif" width="14" height="30" /></td>
 	      </tr>
@@ -86,20 +87,22 @@ a:active {
 	            <td width="8%" height="18" background="images/tab_14.gif" class="STYLE1"><div align="center" class="STYLE2 STYLE1">密码</div></td>
 	            <td width="8%" height="18" background="images/tab_14.gif" class="STYLE1"><div align="center" class="STYLE2 STYLE1">权限</div></td>
 	            <td width="8%" height="18" background="images/tab_14.gif" class="STYLE1"><div align="center" class="STYLE2 STYLE1">操作</div></td>
+	            
 	          </tr>
+	     
 	          <tr>
 	        </tr>
 	        <%
 	       	if(listuser.size()>0){
 	       		for(int i=0;i<listuser.size();i++){
-			%>
-				<tr>
-					<form action="<%=basePath %>user?type=update" method="post">
+	       			%>
+	       			
+	       			 <tr><form action="<%=basePath %>user?type=update" method="post">
 			            <td height="18" bgcolor="#FFFFFF"><div align="center" class="STYLE1"><%=i+1 %><input type="hidden" name="id" value="<%=listuser.get(i).getId()%>" ><input type="hidden" name="per" value="<%=listuser.get(i).getPer()%>" > </div></td>
 			            <td height="18" bgcolor="#FFFFFF" class="STYLE2"><div align="center" class="STYLE2 STYLE1"><input  name="username" type="text" value="<%=listuser.get(i).getUsername() %>"> </div></td>
 			            <td height="18" bgcolor="#FFFFFF" class="STYLE2"><div align="center" class="STYLE2 STYLE1"><input  name="password" type="text" value="<%=listuser.get(i).getPassword() %>"></div></td>
 			            <td height="18" bgcolor="#FFFFFF" class="STYLE2">
-							<div align="center" class="STYLE2 STYLE1">
+				            <div align="center" class="STYLE2 STYLE1">
 					            <input  type="hidden" value="<%=listuser.get(i).getPer() %>">
 					            <%
 					            if(listuser.get(i).getPer().equals("0")){
@@ -126,11 +129,12 @@ a:active {
 				          	<a href=<%=basePath %>user?type=del&id=<%=listuser.get(i).getId()%>  onclick="return (confirm('你确定要删除么？'))"  >删除</a>
 				          	<span class="STYLE1"></span>
 				          	</div>
-			          	</td>
-					</form>
-				</tr>
-				<%}
-	       	}%>
+			          	</td> </form>
+			          </tr>
+	       			<%
+	       		}
+	       	}
+		   %>
 	        </table></td>
 	        <td width="9" background="images/tab_16.gif">&nbsp;</td>
 	      </tr>
@@ -143,6 +147,7 @@ a:active {
 	        <td background="images/tab_21.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 	          <tr>
 	            <td width="25%" height="29" nowrap="nowrap"><span class="STYLE1"></span></td>
+	            
 	          </tr>
 	        </table></td>
 	        <td width="14"><img src="images/tab_22.gif" width="14" height="29" /></td>

@@ -6,12 +6,52 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a9f420-546a-4280-975a-5b2b4224baef" name="Default Changelist" comment="" />
+    <list default="true" id="75a9f420-546a-4280-975a-5b2b4224baef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/addresslist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/addresslist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/bookeditlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/bookeditlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/booklist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/booklist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/cartlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/cartlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/cartlist2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/cartlist2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/feedbacklist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/feedbacklist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/urseedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/urseedit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/urseeditlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/urseeditlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addresslist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/addresslist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookeditlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bookeditlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booklist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/booklist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cartlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartlist2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/cartlist2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/i-heart-ny.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/i-heart-ny.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedbacklist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/feedbacklist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/calendar.rc4.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calendar.rc4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/left.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urseedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/urseedit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urseeditlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/urseeditlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bnbookstore管理系统.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../bnbookstore管理系统.doc" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -21,10 +61,12 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1TK9uIlt7ijKZwBR7MvqKVP9Ela" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bbs_anime/bbs_anime" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -165,10 +207,22 @@
       <workItem from="1573461877722" duration="260000" />
       <workItem from="1573558895976" duration="854000" />
       <workItem from="1573559917641" duration="21000" />
+      <workItem from="1573710213641" duration="2203000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

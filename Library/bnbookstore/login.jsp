@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>**图书管理系统</title>
+<title>图书管理系统</title>
 <style type="text/css">
 body{margin: 0px;}
 </style>
@@ -66,7 +66,7 @@ body{margin: 0px;}
             <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="44%" height="20">&nbsp;</td>
-                <td width="56%" class="STYLE4">版本 2016-11-19 V1.0 </td>
+                <td width="56%" class="STYLE4">版本 2018 05 V1.0 </td>
               </tr>
             </table></td>
             <td>&nbsp;</td>

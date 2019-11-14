@@ -1,77 +1,81 @@
+// Calendar: a Javascript class for Mootools that adds accessible and unobtrusive date pickers to your form elements <http://electricprism.com/aeron/calendar>
+// Calendar RC4, Copyright (c) 2007 Aeron Glemann <http://electricprism.com/aeron>, MIT Style License.
+
+
 var Calendar = new Class(
-	{
-		options : {
-			blocked : [],
-			classes : [],
-			days : [ "Sunday", "Monday", "Tuesday", "Wednesday",
-				"Thursday", "Friday", "Saturday" ],
-			direction :0,
-			draggable :true,
-			months : [ "January", "February", "March", "April", "May",
-				"June", "July", "August", "September", "October",
-				"November", "December" ],
-			navigation :1,
-			offset :0,
-			onHideStart :Class.empty,
-			onHideComplete :Class.empty,
-			onShowStart :Class.empty,
-			onShowComplete :Class.empty,
-			pad :1,
-			tweak : {
-				x :0,
-				y :0
-				}
-			},
-		initialize : function(F, B) {
-			if (!F) {
-				return false
-			}
-			this.setOptions(B);
-			var D = [ "calendar", "prev", "next", "month", "year",
-				"today", "invalid", "valid", "inactive", "active",
-				"hover", "hilite" ];
-			var A = D.map( function(J, I) {
-				if (this.options.classes[I]) {
-					if (this.options.classes[I].length) {
-						J = this.options.classes[I]
+			{
+				options : {
+					blocked : [],
+					classes : [],
+					days : [ "Sunday", "Monday", "Tuesday", "Wednesday",
+							"Thursday", "Friday", "Saturday" ],
+					direction :0,
+					draggable :true,
+					months : [ "January", "February", "March", "April", "May",
+							"June", "July", "August", "September", "October",
+							"November", "December" ],
+					navigation :1,
+					offset :0,
+					onHideStart :Class.empty,
+					onHideComplete :Class.empty,
+					onShowStart :Class.empty,
+					onShowComplete :Class.empty,
+					pad :1,
+					tweak : {
+						x :0,
+						y :0
 					}
-				}
-				return J
-			}, this);
-			this.classes = A.associate(D);
-			this.calendar = new Element("div", {
-				styles : {
-					left :"-1000px",
-					opacity :0,
-					position :"absolute",
-					top :"-1000px",
-					zIndex :1000
-				}
-			}).addClass(this.classes.calendar).injectInside(
-				document.body);
-			if (window.ie6) {
-				this.iframe = new Element("iframe", {
-					styles : {
-						left :"-1000px",
-						position :"absolute",
-						top :"-1000px",
-						zIndex :999
+				},
+				initialize : function(F, B) {
+					if (!F) {
+						return false
 					}
-				}).injectInside(document.body);
-				this.iframe.style.filter = "progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)"
-			}
-			this.fx = this.calendar.effect("opacity", {
-				onStart : function() {
-					if (this.calendar.getStyle("opacity") == 0) {
-						if (window.ie6) {
-							this.iframe.setStyle("display", "block")
+					this.setOptions(B);
+					var D = [ "calendar", "prev", "next", "month", "year",
+							"today", "invalid", "valid", "inactive", "active",
+							"hover", "hilite" ];
+					var A = D.map( function(J, I) {
+						if (this.options.classes[I]) {
+							if (this.options.classes[I].length) {
+								J = this.options.classes[I]
+							}
 						}
-						this.calendar.setStyle("display", "block");
-						this.fireEvent("onShowStart", this.element)
-					} else {
-						this.fireEvent("onHideStart", this.element)
+						return J
+					}, this);
+					this.classes = A.associate(D);
+					this.calendar = new Element("div", {
+						styles : {
+							left :"-1000px",
+							opacity :0,
+							position :"absolute",
+							top :"-1000px",
+							zIndex :1000
+						}
+					}).addClass(this.classes.calendar).injectInside(
+							document.body);
+					if (window.ie6) {
+						this.iframe = new Element("iframe", {
+							styles : {
+								left :"-1000px",
+								position :"absolute",
+								top :"-1000px",
+								zIndex :999
+							}
+						}).injectInside(document.body);
+						this.iframe.style.filter = "progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)"
 					}
-				}.bind(this),
+					this.fx = this.calendar.effect("opacity", {
+						onStart : function() {
+							if (this.calendar.getStyle("opacity") == 0) {
+								if (window.ie6) {
+									this.iframe.setStyle("display", "block")
+								}
+								this.calendar.setStyle("display", "block");
+								this.fireEvent("onShowStart", this.element)
+							} else {
+								this.fireEvent("onHideStart", this.element)
+							}
+						}.bind(this),
 						onComplete : function() {
 							if (this.calendar.getStyle("opacity") == 0) {
 								this.calendar.setStyle("display", "none");

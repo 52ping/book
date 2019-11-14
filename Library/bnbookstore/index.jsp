@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>**图书管理系统</title>
+    <title>图书管理系统</title>
     
 	<link rel="stylesheet" type="text/css" href="css/all.css">
   </head>
@@ -18,7 +18,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<jsp:include page="top.jsp"/>
     <jsp:include page="left.jsp"/>
     <div class="demo">
-    <center>欢迎光临**图书管理系统！</center>
+    <center>欢迎光临图书管理系统！</center>
     </div>
   </body>
 </html>

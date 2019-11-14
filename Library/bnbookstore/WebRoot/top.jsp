@@ -37,7 +37,7 @@ SimpleDateFormat sf = new SimpleDateFormat("yyyy年MM月dd日    HH点mm分");
         <td width="155" background="images/main_08.gif">&nbsp;</td>
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td height="23" align="left" style="border:solid 1px #cadcb2; font-size:12px; color:red;"><marquee>感谢您使用B&N公司图书管理系统！</marquee></td>
+            <td height="23" align="left" style="border:solid 1px #cadcb2; font-size:12px; color:red;"><marquee>感谢您使用图书管理系统！</marquee></td>
           </tr>
         </table></td>
         <td width="200" background="images/main_11.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">

@@ -11,7 +11,7 @@ List<Book> listbook=(List)session.getAttribute("listbook");
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>**图书管理系统</title>
+<title>图书管理系统</title>
 <style type="text/css">
 .STYLE1 {font-size: 12px}
 .STYLE4 {
@@ -59,7 +59,7 @@ a:active {
 	    <td height="30"><table width="100%" border="0" cellspacing="0" cellpadding="0">
 	      <tr>
 	        <td width="15" height="30"><img src="images/tab_03.gif" width="15" height="30" /></td>
-	        <td width="1101" background="images/tab_05.gif"><img src="images/311.gif" width="16" height="16" /> <span class="STYLE4">查看所有用户</span></td>
+	        <td width="1101" background="images/tab_05.gif"><img src="images/311.gif" width="16" height="16" /> <span class="STYLE4">查看所有书籍</span></td>
 	        <td width="281" background="images/tab_05.gif"><table border="0" align="right" cellpadding="0" cellspacing="0">
 	          <tr>
 	                    <td class="STYLE1"><div align="center"></div></td>

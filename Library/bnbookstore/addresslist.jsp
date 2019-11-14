@@ -11,7 +11,7 @@ List<Address> listaddress=(List)session.getAttribute("listaddress");
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>**图书管理系统</title>
+<title>图书管理系统</title>
 <style type="text/css">
 .STYLE1 {font-size: 12px}
 .STYLE4 {
