@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="bnbookstore:Web exploded">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="bnbookstore/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bnbookstore" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/sqljdbc4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/servlet-api.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

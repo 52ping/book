@@ -127,3 +127,33 @@ git stash list
 
 rebase操作的特点：把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了。
 git rebase
+_________________________________________________
+标签管理
+命令git tag <name>就可以打一个新标签：
+$ git tag v1.0
+
+可以用命令git tag查看所有标签：
+$ git tag
+对历史commit添加tag
+$ git tag v0.9 f52c633
+
+可以用git show <tagname>查看标签信息：
+$ git show v0.9
+
+还可以创建带有说明的标签，用-a指定标签名，-m指定说明文字：
+$ git tag -a v0.1 -m "version 0.1 released" 1094adb
+
+用命令git show <tagname>可以看到说明文字：
+$ git show v0.1
+
+ 注意：标签总是和某个commit挂钩。如果这个commit既出现在master分支，
+ 又出现在dev分支，那么在这两个分支上都可以看到这个标签。
+ 
+ 删除标签
+ $ git tag -d v0.1
+ 
+ 推送某个标签到远程，使用命令git push origin <tagname>：
+$ git push origin v1.0
+
+或者，一次性推送全部尚未推送到远程的本地标签：
+$ git push origin --tags
